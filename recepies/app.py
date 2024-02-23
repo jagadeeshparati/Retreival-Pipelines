@@ -116,7 +116,7 @@ with gr.Blocks() as demo:
       out = gr.Dataframe()
 
     btn.click(fn=get_suggestions, inputs=[input1, input2], outputs=out)
-    # index_button.click(index_data)
+    # index_button.click(index_data, outputs=gr.Textbox())
 
 demo.launch(share=True, debug=True)
 

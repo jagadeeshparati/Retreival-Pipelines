@@ -78,7 +78,7 @@ def initialize_document_store(index_folder_name: str, model_checkpoint: str, pas
 
 
 def index_data():
-
+    
     # Load the receipts dataset from higgingface
     dataset=datasets.load_dataset("recipe_nlg", data_dir="dataset 2")
 

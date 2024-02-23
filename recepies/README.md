@@ -8,7 +8,7 @@ While indexing, documet store expects the input data as id, content, title forma
 
 The sampled data is already being indexed into the PLAID document store and created an index folder plaid which contains the clusters, residuals and other files that PLAID document store requires to load the documents when needed.
 
-Steps to run the gradio app and see the output:
+Steps to run the gradio app with the haystack retrieval pipeline and see the output:
 
 1) Clone this project 
 
@@ -28,9 +28,11 @@ Steps to run the gradio app and see the output:
 4) To run the Gradio app using the following command:
 
     The gradio app accepts the ingredients and tools as inputs and retrieves the relevant receipies, ingredients required to prepare the receipe, preperation steps along with the confidence score in a table format from the indexed documents.
-    There is a button added to index the data but disabled for now.
+    There is a button added to index the data but disabled for now. To enable the indexing, please make sure the rig has a GPU and uncomment line 119 in app.py file which reindex the document store using the sample_dataset.tsv file.
 
     ```bash
     cd recepies
     python app.py
+    ```
+
 ```
