@@ -76,7 +76,7 @@ def get_suggestions(ingredients: List[str], tools: List[str]) -> pd.DataFrame:
     # Constructing the query from ingredients and tools
     query = f"What are the recipes that I can prepare using ingredients {ingredients} and {tools}?"
     # Assuming 'p.run' is a method call to some model's API. Replace with actual implementation.
-    output = haystack_pipeline.run(query, params={"Retriever": {"top_k": 5}})
+    output = haystack_pipeline.run(query, params={"Retriever": {"top_k": 10}})
     
     # Initializing empty lists to store recipe information
     recipe_titles = []
