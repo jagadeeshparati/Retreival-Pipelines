@@ -27,7 +27,7 @@ Steps to run the gradio app with the haystack retrieval pipeline and see the out
 
 4) To run the Gradio app using the following command:
 
-    The gradio app accepts the ingredients and tools as inputs and retrieves the relevant receipies, ingredients required to prepare the receipe, preperation steps along with the confidence score in a table format from the indexed documents.
+    The gradio app accepts the single/multiple ingredients and tools(with comma seperated) as inputs and retrieves the relevant receipies, ingredients required to prepare the receipe, preperation steps along with the confidence score in a table format from the indexed documents.
     There is a button added to index the data but disabled for now. To enable the indexing, please make sure the rig has a GPU and uncomment line 119 in app.py file which reindex the document store using the sample_dataset.tsv file.
 
     ```bash
