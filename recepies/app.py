@@ -118,5 +118,5 @@ with gr.Blocks() as demo:
     btn.click(fn=get_suggestions, inputs=[input1, input2], outputs=out)
     # index_button.click(index_data, outputs=gr.Textbox())
 
-demo.launch(share=True, debug=True)
+demo.launch(debug=True)
 

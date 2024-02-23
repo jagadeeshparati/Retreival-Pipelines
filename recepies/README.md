@@ -34,5 +34,5 @@ Steps to run the gradio app with the haystack retrieval pipeline and see the out
     cd recepies
     python app.py
     ```
-
+    Once the above commands are executed, use the localhost url to open the gradio app.
 ```
